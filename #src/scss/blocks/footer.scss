@@ -1,0 +1,72 @@
+.footer {
+	@include ui-space(top, 17);
+
+	padding: 1.5rem 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $secondary-bgc-color;
+
+	&__scroll-to-top-btn {
+		text-align: center;
+
+		display: flex;
+		align-items: center;
+
+		flex-direction: column;
+
+		img {
+			width: 50px;
+			height: 50px;
+			display: block;
+			object-fit: cover;
+		}
+
+		span {
+			@include ui-space(top, 2.5);
+
+			font-size: 25px;
+			color: $secondary-f-color;
+		}
+	}
+
+	&__contact-social {
+		display: flex;
+		justify-content: center;
+
+		@include ui-space(top, 14);
+
+		@include ui-space(left, -7.5);
+
+		i {
+			transition: all 0.5s ease;
+			@include ui-space(left, 7.5);
+			
+			font-size: 60px;
+			
+			color: $secondary-f-color;
+		}
+		i:hover{
+			color: $optional-f-color;
+		}
+	}
+
+	&__author {
+		@include ui-space(top, 5);
+
+		font-size: 25px;
+
+		text-align: center;
+
+		font-weight: $regular-weight;
+
+		color: $secondary-f-color;
+		span {
+			font-weight: $extra-bold-weight;
+
+			color: $secondary-f-color;
+		}
+	}
+}

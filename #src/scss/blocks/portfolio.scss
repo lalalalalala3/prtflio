@@ -1,0 +1,60 @@
+.portfolio {
+	@include ui-space(top, 40);
+
+	background-color: $secondary-bgc-color;
+
+	&__filter {
+		text-align: center;
+
+		color: $secondary-f-color;
+		line-height: 1.5;
+		font-size: 24px;
+	}
+
+	&__more-coming {
+		padding: 1rem 0;
+
+		text-align: center;
+
+		color: $secondary-f-color;
+		line-height: 1.5;
+		font-size: 24px;
+	}
+}
+
+.block-title-bacground {
+	height: 20rem;
+
+	background-image: url(../img/portfolioBackgound.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrap {
+	&__sliders {
+	}
+}
+.sliders {
+	&__slider {
+	}
+}
+.slider {
+	&__item {
+		padding: 0 10px;
+		width: 100%;
+		height: 80vh;
+	}
+}
+.item {
+	&__image {
+		object-fit: contain;
+		max-height: 80vh;
+		min-height: 80vh;
+		width: 100%;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+}

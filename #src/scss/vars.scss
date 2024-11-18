@@ -1,0 +1,221 @@
+// screen sizes ---------------
+$maxWidth: 1330;
+
+// z-index --------------------
+$ui-index-1: 1;	//для наползающих элементов в потоке
+$ui-index-2: 2;	//для наползающих элементов в потоке
+$ui-index-3: 3;	//для масок
+$ui-index-4: 4;	//для сайдбаров
+$ui-index-5: 5; //для модалок
+$ui-index-6: 6;	//дял элементов, перекрывающих все
+
+
+// FONTS ----------------------
+// шрифт с google fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+
+// font-family
+$font-family: "Roboto", sans-serif;
+
+// font weight
+$regular-weight: 400;
+$medium-weight: 500;
+$bold-weight: 700;
+$extra-bold-weight: 900;
+
+//font colors
+$primary-f-color: #000;
+
+$secondary-f-color: #fff;
+$secondary-f-hover-color: #f0eaea;
+$secondary-f-active-color: #a99e9e;
+
+$optional-f-color: #909090;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize}* ((100vw- 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+// @include adaptive-font(40, 25);
+
+
+// bgc colors------------------------------
+$main-bgc-color: #D7D7D7;
+$secondary-bgc-color: #1A1A1A;
+$optional-bgc-color: #C4C4C4;
+
+$contact-btn-color: #fff;
+
+$skills-icon-color: #2f2e2d;
+
+// ui step --------------------------------
+// адекватные дизайнеры задают размеры на основе системы шагов
+$ui-step: 4px;
+
+@mixin ui-space($direction, $size) {
+	@if ($direction == top) {
+		margin-top: $ui-step * $size;
+	}
+
+	@if ($direction == bottom) {
+		margin-bottom: $ui-step * $size;
+	}
+
+	@if ($direction == left) {
+		margin-left: $ui-step * $size;
+	}
+
+	@if ($direction == right) {
+		margin-right: $ui-step * $size;
+	}
+}
+// .element {
+// 	// это отступ в 8 пикселей сверзу
+// 	@include ui-space(top, 2);
+
+// 	// это 40 px (миксин-множитель)
+// 	height: $ui-step * 10;
+// }
+
+
+// hover на мобилках --------------------------
+$mouse-device: '(hover: hover) and (pointer: fine)';
+// .button {
+// 	background-color: red;
+
+// 	&:hover {
+// 		@media #{$mouse-device} {
+// 			background: #000;
+// 		}
+// 	}
+// }
+$touch-device: '(hover: none) and (pointer: coarse)';
+
+
+// Reusable css classes --------------------------------------
+
+// // buttons ---------------------------------------------------
+// .button {
+// 	display: inline-block;
+// 	background-color: $color;
+// 	padding: 1.25rem 2rem;
+// 	border-radius: 1rem;
+// 	font-weight: $weight;
+// }
+// .button:hover {
+// 	background-color: $color;
+// }
+// .button__icon {
+// 	margin-left: $mr-l;
+// }
+// .button--flex {
+// 	display: inline-flex;
+// 	align-items: center;
+// }
+
+// breakpoints -----------------------------------------------
+
+/* PC */
+@media (max-width: 1306px) {
+}
+/*
+tablet */
+@media (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+}
+/* mobile small*/
+@media (max-width: 565.98px) {
+}
+
+// переиспользование по bem ===================================================
+.block-title {
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1{
+		text-transform: uppercase;
+
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
+		color: $primary-f-color;
+	
+		font-style: normal;
+		letter-spacing: 0.35538em;
+		line-height: 38px;
+		font-weight: $bold-weight;
+		@include adaptive-font(30, 14);
+
+		box-sizing: border-box;
+		
+		padding: 1rem;
+
+		border: 8px solid #000000;
+	}
+}
+.block-text{
+	@include ui-space(top, 15);
+
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p{
+		width: 50%;
+
+		@include adaptive-font(22, 12);
+
+		text-align: center;
+
+		font-weight: $regular-weight;
+	}
+
+	/* mobile */
+	@media (max-width: 767.98px) {
+		p{
+			width: 100%;
+		}
+	}
+}
+.block-seporator{
+	@include ui-space(top, 15);
+
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button {
+	@include ui-space(top, 15);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	button{
+		background: transparent;
+		
+		padding: 0 1rem;
+
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+
+		@include adaptive-font(22, 16);
+		line-height: 1.25;
+		font-weight: $bold-weight;
+		font-style: normal;
+		letter-spacing: 0.1em;
+	}
+}

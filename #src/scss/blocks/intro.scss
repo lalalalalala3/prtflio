@@ -1,0 +1,84 @@
+.intro {
+	@include ui-space(top, 36);
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+
+		z-index: $ui-index-2;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__portret {
+		flex: 0 1 50%;
+
+		overflow: hidden;
+
+		display: flex;
+		justify-content: center;
+
+		filter: drop-shadow(48px 4px 4px rgba(0, 0, 0, 0.25));
+	}
+}
+.content {
+	&__description {
+		font-weight: $bold-weight;
+	}
+
+	&__social-media {
+		@include ui-space(top, 30);
+
+		font-size: 50px;
+
+		margin-left: -2rem;
+
+		a{
+			color: $primary-f-color;
+			transition: all 0.5s ease;
+		}
+		a:hover{
+			color: $optional-f-color;
+		}
+		i{
+			cursor: pointer;
+
+			padding: 6px;
+
+			background-color: $optional-bgc-color;
+
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+			margin-left: 2rem;
+		}
+	}
+}
+.description {
+	&__greeting {
+
+		font-size: 40px;
+	}
+
+	&__name {
+		@include ui-space(top, 13);
+
+		@include adaptive-font(80, 25);
+	}
+
+	&__profession {
+		@include ui-space(top, 3);
+
+		font-size: 25px;
+
+		color: $optional-f-color;
+	}
+}
+.portret {
+	&__img {
+		display: block;
+		max-width: 100%;
+	}
+}

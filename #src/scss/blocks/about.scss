@@ -1,0 +1,53 @@
+.about-me {
+	@include ui-space(top, 35.5);
+
+	&__habits-wrap {
+		@include ui-space(top, 23);
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		flex-wrap: wrap;
+	}
+}
+
+.habits-wrap {
+	&__habbit {
+		@include ui-space(top, 4);
+
+		width: 50%;
+
+		position: relative;
+	}
+}
+
+.habbit {
+	&_title {
+		@include ui-space(left, 7);
+
+		font-size: 24px;
+		line-height: 1.6875;
+		font-weight: $bold-weight;
+		letter-spacing: 0.18538em;
+		text-transform: uppercase;
+	}
+	
+	&__text {
+		@include ui-space(top, 3);
+		@include ui-space(left, 13);
+		
+		font-size: 14px;
+		text-align: justify;
+	}
+}
+.habbit__title-img{
+	position: absolute;
+	top: -8px;
+	left: -10px;
+	height: 50px;
+	width: 50px;
+}

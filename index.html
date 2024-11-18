@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vladimir's website</title>
+	<link rel="stylesheet" href="./styles/main.css">
+	<!-- иконочный шрифт -->
+	<script src="https://kit.fontawesome.com/6badf380bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="#" class="header__logo">
+						<img src="./img/logo.svg" alt="logo" />
+					</a>
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="#about-me" class="menu__link">обо мне</a></li>
+							<li><a href="#skils" class="menu__link">навыки</a></li>
+							<li><a href="#portfolio" class="menu__link">портфолио</a></li>
+							<li><a href="#contact-with-me" class="menu__link menu__contact-btn">связаться</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<main class="main">
+			<div class="main__container">
+				<section class="intro" id="intro">
+					<div class="intro__wrapper">
+						<div class="intro__content">
+							<div class="content__description">
+								<div class="description__greeting">Привет, я</div>
+								<h1 class="description__name">Владимир Григорчук</h1>
+								<div class="description__profession">Системный администратор баз данных</div>
+							</div>
+							<div class="content__social-media">
+								<a href="https://github.com/analvrdlk" target="_blank">
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a href="https://vk.com/analvrdlk" target="_blank">
+									<i class="fa-brands fa-vk"></i>
+								</a>
+								<a href="https://t.me/Analvrdlk" target="_blank">
+									<i class="fa-brands fa-telegram"></i>
+								</a>
+							</div>
+						</div>
+						<div class="intro__portret">
+							<img src="img/face.png" alt="фотки пока что нет" class="portret__img">
+						</div>
+					</div>
+				</section>
+
+				<section class="about-me" id="about-me">
+					<div class="block-title">
+						<h1>обо мне</h1>
+					</div>
+					<div class="block-text">
+						<p>
+						ЛУЧШИЙ СТУДЕНТ АПК ПО ВЕРСИИ САМОГО АВТОРИТЕТНОГО И НАДЁЖНОГО ИСТОЧНИКА<br>
+						(моей бабушки)
+						</p>
+					</div>
+					<div class="block-seporator">
+						<img src="img/separatorBlack 1 .png" alt="картинка-разделитель">
+					</div>
+					<div class="about-me__habits-wrap">
+						<div class="habits-wrap__habbit">
+							<div class="habbit_title">Дизайн</div>
+							<img class="habbit__title-img" src="./img/2.png" alt="Habbit image">
+							<div class="habbit__text">дизайн выполнен в scss с использованием js
+							</div>
+						</div>
+						<div class="habits-wrap__habbit">
+							<div class="habbit_title">Разработка</div>
+							<img class="habbit__title-img" src="./img/3.png" alt="Habbit image">
+							<div class="habbit__text">во время разработки я очень много учился и собирал у других людей, осваивал scss и js
+							</div>
+					</div>
+					<div class="block-seporator">
+						<img src="img/separatorBlack 1 .png" alt="картинка-разделитель">
+					</div>
+				</section>
+
+				<section class="skils" id="skils">
+					<div class="block-title">
+						<h1>навыки</h1>
+					</div>
+					<div class="skils__skils-block">
+						<div class="skils-block__title">
+							Сейчас использую:
+						</div>
+						<div class="skils-block__items-wrap">
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">html 5</div>
+								<i class="fa-brands fa-html5"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">css 3</div>
+								<i class="fa-brands fa-css3-alt"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">figma</div>
+								<i class="fa-brands fa-figma"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">git</div>
+								<i class="fa-brands fa-git-alt"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">scss</div>
+								<i class="fa-brands fa-sass"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">java script</div>
+								<i class="fa-brands fa-js"></i>
+							</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">python</div>
+								<i class="fa-brands fa-python"></i>
+							</div>
+						</div>
+					</div>
+					<div class="skils__skils-block">
+						<div class="skils-block__title">
+							Сейчас изучаю:
+						</div>
+							<div class="skils-block__skils-item">
+								<div class="skils-item__skill-name">финансовая грамотность</div>
+								<i class="fa-solid fa-money-bills"></i>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="portfolio" id="portfolio">
+				<div class="block-title block-title-bacground">
+					<h1>портфолио</h1>
+				</div>
+				<div class="portfolio__filter">
+					Грамоты
+				</div>
+				<div class="portfolio__filter">
+					1 курс
+				</div>
+				<div class="wrap__sliders">
+					<div class="sliders__slider">
+						<div class="slider__item">
+							<img data-lazy="img/photo_2023-06-05_23-20-49.jpg" alt="грамота" class="item__image" />
+						</div>
+						<div class="slider__item">
+							<img data-lazy="img/photo_2023-06-05_23-20-45.jpg" alt="грамота" class="item__image" />
+						</div>
+						<div class="slider__item">
+							<img data-lazy="img/photo_2023-06-05_23-20-38.jpg" alt="грамота" class="item__image" />
+						</div>
+					</div>
+					<div class="portfolio__filter">
+						2 курс
+					</div>
+					<div class="wrap__sliders">
+						<div class="sliders__slider">
+							<div class="slider__item">
+								<img data-lazy="img/10.jpg" alt="грамота" class="item__image" />
+							</div>
+							<div class="slider__item">
+								<img data-lazy="img/11.jpg" alt="грамота" class="item__image" />
+							</div>
+							<div class="slider__item">
+								<img data-lazy="img/12.jpg" alt="грамота" class="item__image" />
+							</div>
+							</div>
+						</div>
+						<div class="portfolio__filter">
+							3 курс
+						</div>
+						<div class="wrap__sliders">
+							<div class="sliders__slider">
+								<div class="slider__item">
+									<img data-lazy="img/13.jpg" alt="грамота" class="item__image" />
+								</div>
+								<div class="slider__item">
+									<img data-lazy="img/14.jpg" alt="грамота" class="item__image" />
+								</div>
+							</div>
+							<div class="portfolio__filter">
+								Мои проекты
+							</div>
+							<div class="portfolio__filter">
+								<p><a class="visitka" href="https://analvrdlk.github.io/visitka/">САЙТ ВИЗИТКА</a></p>
+							</div>
+							<div class="wrap__sliders">
+								<div class="sliders__slider">
+									<div class="slider__item">
+										<img data-lazy="img/site1.png" alt="скрин сайта" class="item__image" />
+									</div>
+									<div class="slider__item">
+										<img data-lazy="img/site2.png" alt="скрин сайта" class="item__image" />
+									</div>
+									<div class="slider__item">
+										<img data-lazy="img/site3.png" alt="скрин сайта" class="item__image" />
+									</div>
+									</div>
+								</div>
+
+				</div>
+				<div class="portfolio__more-coming">
+					и другие мои достижения скоро будут тут!
+				</div>
+			</section>
+
+			<section class="contact" id="contact-with-me">
+				<div class="block-title">
+					<h1>Связаться</h1>
+				</div>
+				<div class="block-text">
+				
+				</div>
+				<div class="block-seporator">
+					<img src="img/separatorBlack 1 .png" alt="картинка-разделитель">
+				</div>
+				<div class="contact__form">
+					<form action="#" id="form">
+						<div class="form__item form__name">
+							<input class="_req" id="name" type="text" placeholder="Имя*" />
+						</div>
+						<div class="form__item form__email">
+							<input class="_req _email" id="email" type="email" placeholder="Email*" />
+						</div>
+						<div class="form__item form__theme">
+							<input class="_req" id="theme" type="text" placeholder="Тема*" />
+						</div>
+						<div class="form__item form__message">
+							<textarea type="text" id="text" placeholder="Ваше сообщение" rows="2" cols="15"></textarea>
+						</div>
+						<div class="button">
+							<button id="contact" class="button button-contacnt">
+								отправить
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="#intro" class="footer__scroll-to-top-btn">
+					<img src="./img/arrow.svg" alt="arrow back to top">
+					<span>Вернуться наверх</span>
+				</a>
+				<div class="footer__contact-social">
+					<a href="https://avatars.mds.yandex.net/i?id=5bb32da5368e7cc45d508fdc0b27cbc68044c81b-13082504-images-thumbs&n=13" target="_blank">
+						<i class="fa-brands fa-vk"></i>
+					</a>
+					<a href="https://avatars.mds.yandex.net/i?id=5bb32da5368e7cc45d508fdc0b27cbc68044c81b-13082504-images-thumbs&n=13" target="_blank">
+						<i class="fa-brands fa-telegram"></i>
+					</a>
+					<a href="https://avatars.mds.yandex.net/i?id=5bb32da5368e7cc45d508fdc0b27cbc68044c81b-13082504-images-thumbs&n=13" target="_blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</div>
+				<div class="footer__author">
+					<span>@2023 Владимир Григорчук</span> Все Права Защищены.
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="./libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="./libs/slick/slick.css">
+	<script src="./scripts/slider.js"></script>
+	<!-- <script src="./scripts/textareaHeight.js"></script> -->
+</body>
+
+</html>

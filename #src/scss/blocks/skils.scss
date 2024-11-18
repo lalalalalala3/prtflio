@@ -1,0 +1,51 @@
+.skils {
+	@include ui-space(top, 30);
+
+	&__skils-block {
+		@include ui-space(top, 25.5);
+	}
+}
+
+.skils-block {
+
+	&__title {
+		font-size: 30px;
+		font-weight: $bold-weight;
+		text-transform: uppercase;
+		line-height: 2.3125;
+		letter-spacing: 0.18538em;
+	}
+
+	&__items-wrap {
+		@include ui-space(top, 18.75);
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		justify-items: center;
+	}
+
+	&__skils-item {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+
+		padding: 1rem;
+		i{
+			color: $skills-icon-color;
+
+			font-size: 90px
+		}
+	}
+}
+.skils-item {
+
+	&__skill-name {
+		text-align: center;
+
+		font-size: 27px;
+		font-weight: $regular-weight;
+		line-height: 1.8125;
+		letter-spacing: 0.13538em;
+	}
+}
